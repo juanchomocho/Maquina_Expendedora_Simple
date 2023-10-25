@@ -23,6 +23,18 @@ public class MaquinaExpendedoraSimple {
         estacionOrigen = "León";
         estacionDestino = "La Bañeza";
     }
+    
+    /**
+     * Crea una nueva máquina expendedora que tiene siempre el mismo precio
+     * siempre tiene el mismo destino y siempre tiene el mismo origen
+     */
+    public MaquinaExpendedoraSimple(int precioDelBillete, String destino) {
+        precioBillete = precioDelBillete;
+        balanceClienteActual = 0;
+        totalDineroAcumulado = 0;
+        estacionOrigen = "León";
+        estacionDestino = destino;
+    }
 
     /**
      * Devuelve el precio del billete
